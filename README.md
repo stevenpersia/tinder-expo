@@ -29,19 +29,19 @@ This project was inspired by this [amazing Kishore's work on Dribbble](https://d
 ## Screenshots
 
 <img
-width="210"
+width="205"
 alt="Capture 1"
 src="https://github.com/stevenpersia/tinder-expo/blob/master/preview/capture-1.png">
 <img
-width="210"
+width="205"
 alt="Capture 2"
 src="https://github.com/stevenpersia/tinder-expo/blob/master/preview/capture-2.png">
 <img
-width="210"
+width="205"
 alt="Capture 3"
 src="https://github.com/stevenpersia/tinder-expo/blob/master/preview/capture-3.png">
 <img
-width="210"
+width="205"
 alt="Capture 4"
 src="https://github.com/stevenpersia/tinder-expo/blob/master/preview/capture-4.png">
 
