@@ -25,6 +25,9 @@
 
 This project was inspired by this [amazing Kishore's work on Dribbble](https://dribbble.com/shots/5631075-Dating-App-Sketch-Freebie-Day-334-365-Project365). Feel free to follow this guy because he does great stuff.
 
+## Demo
+
+You can try it here : https://expo.io/@stevenpersia/projects/tinder-expo
 
 ## Screenshots
 
