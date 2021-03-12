@@ -2,14 +2,14 @@
 <img
 		width="250"
 		alt="Tinder Clone - Expo"
-		src="https://github.com/stevenpersia/tinder-expo/blob/main/preview/tinder-clone-logo.gif">
+		src="https://github.com/stevenpersia/tinder-expo/blob/master/preview/tinder-clone-logo.gif">
 </h1>
 <h3 align="center">
 	Tinder Clone - Expo
 </h3>
 
 <p align="center">
-	<img src="https://github.com/stevenpersia/tinder-expo/blob/main/preview/tinderclone-preview.gif" width="300">
+	<img src="https://github.com/stevenpersia/tinder-expo/blob/master/preview/tinderclone-preview.gif" width="300">
 </p>
 
 
@@ -31,19 +31,19 @@ This project was inspired by this [amazing Kishore's work on Dribbble](https://d
 <img
 width="210"
 alt="Capture 1"
-src="https://github.com/stevenpersia/tinder-expo/blob/main/preview/capture-1.png">
+src="https://github.com/stevenpersia/tinder-expo/blob/master/preview/capture-1.png">
 <img
 width="210"
 alt="Capture 2"
-src="https://github.com/stevenpersia/tinder-expo/blob/main/preview/capture-2.png">
+src="https://github.com/stevenpersia/tinder-expo/blob/master/preview/capture-2.png">
 <img
 width="210"
 alt="Capture 3"
-src="https://github.com/stevenpersia/tinder-expo/blob/main/preview/capture-3.png">
+src="https://github.com/stevenpersia/tinder-expo/blob/master/preview/capture-3.png">
 <img
 width="210"
 alt="Capture 4"
-src="https://github.com/stevenpersia/tinder-expo/blob/main/preview/capture-4.png">
+src="https://github.com/stevenpersia/tinder-expo/blob/master/preview/capture-4.png">
 
 
 ## Installation and usage
