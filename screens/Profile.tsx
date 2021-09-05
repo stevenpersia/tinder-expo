@@ -14,10 +14,12 @@ const Profile = () => {
   const {
     age,
     image,
-    info1,
-    info2,
-    info3,
-    info4,
+    college,
+    skills,
+    phone,
+    email,
+    linkedin,
+    github,
     location,
     match,
     name,
@@ -56,20 +58,22 @@ const Profile = () => {
           name={name}
           age={age}
           location={location}
-          info1={info1}
-          info2={info2}
-          info3={info3}
-          info4={info4}
+          college={college}
+          skills={skills}
+          phone={phone}
+          email={email}
+          linkedin={linkedin}
+          github={github}
         />
 
         <View style={styles.actionsProfile}>
-          <TouchableOpacity style={styles.circledButton}>
+          {/* <TouchableOpacity style={styles.circledButton}>
             <Icon name="ellipsis-horizontal" size={20} color={WHITE} />
-          </TouchableOpacity>
+          </TouchableOpacity> */}
 
           <TouchableOpacity style={styles.roundedButton}>
-            <Icon name="chatbubble" size={20} color={WHITE} />
-            <Text style={styles.textButton}>Start chatting</Text>
+            <Icon name="settings" size={20} color={WHITE} />
+            <Text style={styles.textButton}>Edit Profile</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
