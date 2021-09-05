@@ -6,6 +6,7 @@ export const WHITE = "#FFFFFF";
 export const GRAY = "#757E90";
 export const DARK_GRAY = "#363636";
 export const BLACK = "#000000";
+export const BLUE = "#0645AD";
 
 export const ONLINE_STATUS = "#46A575";
 export const OFFLINE_STATUS = "#D04949";
@@ -214,7 +215,10 @@ export default StyleSheet.create({
     color: GRAY,
     fontSize: 13,
   },
-
+  infoLink: {
+    color: BLUE,
+    fontSize: 13,
+  },
   // CONTAINER - GENERAL
   bg: {
     flex: 1,

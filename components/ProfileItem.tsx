@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, View, Linking } from "react-native";
 import Icon from "./Icon";
 import { ProfileItemT } from "../types";
 import styles, { DARK_GRAY, WHITE } from "../assets/styles";
@@ -53,14 +53,26 @@ const ProfileItem = ({
       <Text style={styles.iconProfile}>
         <Icon name="logo-linkedin" size={12} color={DARK_GRAY} />
       </Text>
-      <Text style={styles.infoContent}>{linkedin}</Text>
+      <Text
+        onPress={() =>
+          Linking.openURL("https://www.linkedin.com/company/the-headstarter/")
+        }
+        style={styles.infoLink}
+      >
+        {linkedin}
+      </Text>
     </View>
 
     <View style={styles.info}>
       <Text style={styles.iconProfile}>
         <Icon name="logo-github" size={12} color={DARK_GRAY} />
       </Text>
-      <Text style={styles.infoContent}>{github}</Text>
+      <Text
+        onPress={() => Linking.openURL("https://github.com/")}
+        style={styles.infoLink}
+      >
+        {github}
+      </Text>
     </View>
   </View>
 );
