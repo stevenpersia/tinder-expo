@@ -1,19 +1,19 @@
 import { DataT } from "../../types";
-import IMAGE_01 from "../images/01.jpg";
-import IMAGE_02 from "../images/02.jpg";
-import IMAGE_03 from "../images/03.jpg";
-import IMAGE_04 from "../images/04.jpg";
-import IMAGE_05 from "../images/05.jpg";
-import IMAGE_06 from "../images/06.jpg";
-import IMAGE_07 from "../images/07.jpg";
-import IMAGE_08 from "../images/08.jpg";
-import IMAGE_09 from "../images/09.jpg";
-import IMAGE_10 from "../images/10.jpg";
+import IMAGE_01 from "../images/11.jpg";
+import IMAGE_02 from "../images/12.jpg";
+import IMAGE_03 from "../images/13.jpg";
+import IMAGE_04 from "../images/14.jpg";
+import IMAGE_05 from "../images/15.jpg";
+import IMAGE_06 from "../images/16.jpg";
+import IMAGE_07 from "../images/17.jpg";
+import IMAGE_08 from "../images/18.jpg";
+import IMAGE_09 from "../images/19.jpg";
+import IMAGE_10 from "../images/20.jpg";
 
 const data: DataT[] = [
   {
     id: 1,
-    name: "Leanne Graham",
+    name: "Bill Gates",
     isOnline: true,
     match: "78",
     description:
@@ -24,7 +24,7 @@ const data: DataT[] = [
   },
   {
     id: 2,
-    name: "Clementine Bauch",
+    name: "Mark Zuckerberg",
     match: "93",
     description:
       "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
@@ -34,7 +34,7 @@ const data: DataT[] = [
   },
   {
     id: 3,
-    name: "Ervin Howell",
+    name: "Jabrils",
     match: "45",
     description:
       "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
@@ -45,7 +45,7 @@ const data: DataT[] = [
   },
   {
     id: 4,
-    name: "John Lebsack",
+    name: "Linus Sebastian",
     match: "88",
     description:
       "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
@@ -55,7 +55,7 @@ const data: DataT[] = [
   },
   {
     id: 5,
-    name: "James Dietrich",
+    name: "Reshma Saujani",
     match: "76",
     description:
       "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
@@ -65,7 +65,7 @@ const data: DataT[] = [
   },
   {
     id: 6,
-    name: "Patricia Schulist",
+    name: "Slyvia Acevedo",
     match: "95",
     description:
       "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
@@ -84,7 +84,7 @@ const data: DataT[] = [
   },
   {
     id: 7,
-    name: "Chelsey Weissnat",
+    name: "Jonathan Ma",
     match: "67",
     description:
       "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
@@ -102,8 +102,9 @@ const data: DataT[] = [
     image: IMAGE_07,
   },
   {
+    // not all props needed
     id: 8,
-    name: "Nicky Runol",
+    name: "Mike Dane",
     match: "85",
     description: "New grad looking for exciting swe opportunities",
     age: "27",
@@ -121,7 +122,7 @@ const data: DataT[] = [
   },
   {
     id: 9,
-    name: "Glenna Reichert",
+    name: "Charley Moore",
     match: "74",
     description:
       "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
@@ -132,7 +133,7 @@ const data: DataT[] = [
   },
   {
     id: 10,
-    name: "Kurtis DuBuque",
+    name: "Shane Wighton",
     match: "98",
     description:
       "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
