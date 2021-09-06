@@ -17,9 +17,9 @@ const data: DataT[] = [
     isOnline: true,
     match: "78",
     description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
+      "Software Engineer @ Capital ONE. Experience in React and Swift",
     message:
-      "I will go back to Gotham and I will fight men Iike this but I will not become an executioner.",
+      "I love to code!",
     image: IMAGE_01,
   },
   {
@@ -69,6 +69,14 @@ const data: DataT[] = [
     match: "95",
     description:
       "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
+    age: "27",
+    location: "New York, NY",
+    college: "Queens College (CUNY)",
+    skills: "React, AWS, Express, GCP",
+    phone: "+1(234) 567-8901",
+    email: "nickyrunol@email.com",
+    linkedin: "https://www.linkedin.com/in/nickyrunol",
+    github: "https://github.com/nickyrunol",
     isOnline: true,
     message:
       "You have nothing, nothing to threaten me with. Nothing to do with all your strength.",
@@ -80,6 +88,14 @@ const data: DataT[] = [
     match: "67",
     description:
       "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
+    age: "27",
+    location: "New York, NY",
+    college: "Queens College (CUNY)",
+    skills: "React, AWS, Express, GCP",
+    phone: "+1(234) 567-8901",
+    email: "nickyrunol@email.com",
+    linkedin: "https://www.linkedin.com/in/nickyrunol",
+    github: "https://github.com/nickyrunol",
     isOnline: true,
     message:
       "Never start with the head. The victim gets all fuzzy. He can't feel the next... See?",
