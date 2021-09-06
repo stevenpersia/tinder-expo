@@ -55,7 +55,7 @@ const ProfileItem = ({
       </Text>
       <Text
         onPress={() =>
-          Linking.openURL("https://www.linkedin.com/company/the-headstarter/")
+          Linking.openURL("https://www.linkedin.com/in/nabilfayak")
         }
         style={styles.infoLink}
       >
@@ -68,7 +68,7 @@ const ProfileItem = ({
         <Icon name="logo-github" size={12} color={DARK_GRAY} />
       </Text>
       <Text
-        onPress={() => Linking.openURL("https://github.com/")}
+        onPress={() => Linking.openURL("https://github.com/nabilfayak")}
         style={styles.infoLink}
       >
         {github}
