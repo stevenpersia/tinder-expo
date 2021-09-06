@@ -9,11 +9,13 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^12.0.4",
-    "@react-navigation/bottom-tabs": "^5.11.8",
-    "@react-navigation/native": "^5.9.3",
-    "@react-navigation/stack": "^5.14.3",
+    "@react-native-async-storage/async-storage": "^1.15.7",
+    "@react-navigation/bottom-tabs": "^5.11.15",
+    "@react-navigation/native": "^5.9.8",
+    "@react-navigation/stack": "^5.14.9",
     "expo": "~40.0.0",
-    "expo-status-bar": "~1.0.3",
+    "expo-status-bar": "^1.0.4",
+    "parse": "^3.3.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
@@ -25,11 +27,12 @@
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
+    "@types/parse": "^2.18.10",
     "@types/react": "~16.9.35",
-    "@types/react-dom": "~16.9.8",
-    "@types/react-native": "~0.63.2",
-    "prettier": "^2.2.1",
-    "typescript": "~4.0.0"
+    "@types/react-dom": "^16.9.14",
+    "@types/react-native": "^0.63.53",
+    "prettier": "^2.3.2",
+    "typescript": "^4.0.8"
   },
   "private": true
 }
