@@ -9,21 +9,10 @@ import {
 import { Icon, ProfileItem } from "../components";
 import DEMO from "../assets/data/demo";
 import styles, { WHITE } from "../assets/styles";
+import NABIL from "../assets/images/nabil.jpg";
 
 const Profile = () => {
-  const {
-    age,
-    image,
-    college,
-    skills,
-    phone,
-    email,
-    linkedin,
-    github,
-    location,
-    match,
-    name,
-  } = DEMO[7];
+
 
   return (
     <ImageBackground
@@ -31,7 +20,7 @@ const Profile = () => {
       style={styles.bg}
     >
       <ScrollView style={styles.containerProfile}>
-        <ImageBackground source={image} style={styles.photo}>
+        <ImageBackground source={NABIL} style={styles.photo}>
           <View style={styles.top}>
             <TouchableOpacity>
               <Icon
@@ -54,17 +43,15 @@ const Profile = () => {
         </ImageBackground>
 
         <ProfileItem
-          matches={match}
-          name={name}
-          age={age}
-          location={location}
-          college={college}
-          skills={skills}
-          phone={phone}
-          email={email}
-          linkedin={linkedin}
-          github={github}
-        />
+          name={"Nabil Fayak"}
+          age={"18"}
+          location={"New York"}
+          college={"CUNY Baruch"}
+          skills={"React, AWS, Express, GCP"}
+          phone={"phone"}
+          email={"nabilfayak@gmail.com"}
+          linkedin={"linkedin.com/in/nabilfayak"}
+          github={"github.com/nabilfayak"} matches={""}        />
 
         <View style={styles.actionsProfile}>
           {/* <TouchableOpacity style={styles.circledButton}>

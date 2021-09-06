@@ -20,7 +20,7 @@ const Matches = () => (
       <View style={styles.top}>
         <Text style={styles.title}>Matches</Text>
         <TouchableOpacity>
-          <Icon name="ellipsis-vertical" color={DARK_GRAY} size={20} />
+          <Icon name="ellipsis-vertical" color={DARK_GRAY} size={30} />
         </TouchableOpacity>
       </View>
 
