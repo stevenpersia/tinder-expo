@@ -1,3 +1,4 @@
+import "react-native-gesture-handler";
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
@@ -5,13 +6,30 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Home, Matches, Messages, Profile } from "./screens";
 import { PRIMARY_COLOR, DARK_GRAY, BLACK, WHITE } from "./assets/styles";
 import TabBarIcon from "./components/TabBarIcon";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import Parse from "parse/react-native";
+import { UserLogin } from "./screens/UserLogIn";
+import { UserRegistration } from "./screens/UserRegistration";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
+// Your Parse initialization configuration goes here
+Parse.setAsyncStorage(AsyncStorage);
+const PARSE_APPLICATION_ID = "APPLICATION_ID";
+const PARSE_HOST_URL = "HOST_URL";
+const PARSE_JAVASCRIPT_ID = "JAVASCRIPT_ID";
+Parse.initialize(
+  "KzecbOsRY2VfTvOKarw57aaaCG3bJVmmvi2ufVbX",
+  "ULgIx1p6XQNNOkthw9pm16EzPqpX88sVB6AuZIJs"
+);
+Parse.serverURL = "https://parseapi.back4app.com/";
+
 const App = () => (
   <NavigationContainer>
     <Stack.Navigator>
+      <Stack.Screen name="Login" component={UserLogin} />
+      <Stack.Screen name="SignUp" component={UserRegistration} />
       <Stack.Screen
         name="Tab"
         options={{ headerShown: false, animationEnabled: false }}
