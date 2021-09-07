@@ -43,6 +43,32 @@ export const UserLogIn: FC<{}> = ({}): ReactElement => {
       });
   };
 
+  const contracteeUserLogIn = async function (): Promise<boolean> {
+    // Note that this values come from state variables that we've declared before
+    const usernameValue: string = username;
+    const passwordValue: string = password;
+    return await Parse.User.logIn(usernameValue, passwordValue)
+      .then(async (loggedInUser: Parse.User) => {
+        // logIn returns the corresponding ParseUser object
+        Alert.alert(
+          'Success!',
+          `User ${loggedInUser.get('username')} has successfully signed in!`,
+        );
+        // To verify that this is in fact the current user, currentAsync can be used
+        const currentUser: Parse.User = await Parse.User.currentAsync();
+        console.log(loggedInUser === currentUser);
+        // Navigation.navigate takes the user to the screen named after the one
+        // passed as parameter
+        navigation.navigate('LessTabs');
+        return true;
+      })
+      .catch((error: any) => {
+        // Error can be caused by wrong parameters or lack of Internet connection
+        Alert.alert('Error!', error.message);
+        return false;
+      });
+  };
+
   return (
     <View style={Styles.login_wrapper}>
       <View style={Styles.form}>
@@ -63,7 +89,17 @@ export const UserLogIn: FC<{}> = ({}): ReactElement => {
         />
         <TouchableOpacity onPress={() => doUserLogIn()}>
           <View style={Styles.button}>
-            <Text style={Styles.button_label}>{'Sign in'}</Text>
+            <Text style={Styles.button_label}>{'Sign in as Contractor'}</Text>
+          </View>
+        </TouchableOpacity>
+        <View style={Styles.login_social_separator}>
+          <View style={Styles.login_social_separator_line} />
+          <Text style={Styles.login_social_separator_text}>{'or'}</Text>
+          <View style={Styles.login_social_separator_line} />
+        </View>
+        <TouchableOpacity onPress={() => contracteeUserLogIn()}>
+          <View style={Styles.button}>
+            <Text style={Styles.button_label}>{'Sign in as Contractee'}</Text>
           </View>
         </TouchableOpacity>
       </View>
