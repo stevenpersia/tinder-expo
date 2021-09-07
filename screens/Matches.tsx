@@ -14,7 +14,7 @@ import {
 import { CardItem, Icon, ProfileItem } from "../components";
 import DEMO from "../assets/data/demo";
 import styles, { BLACK, DARK_GRAY, SECONDARY_COLOR, WHITE } from "../assets/styles";
-import IMAGE_01 from "../assets/images/11.jpg";
+import IMAGE_01 from "../assets/images/nabil.jpg";
 
 
 const Matches = () => {
@@ -68,22 +68,22 @@ const Matches = () => {
 
                             <ProfileItem
                         matches={IMAGE_01}
-                        name={"Bill Gates"}
-                        age={"65"}
+                        name={"Nabil Fayak"}
+                        age={"18"}
                         location={"New York"}
-                        college={"Harvard University"}
-                        skills={"Microsoft Office, Azure, AWS"}
+                        college={"CUNY Baruch College"}
+                        skills={"AWS, Python, React, GCP, Azure, Node.js"}
                         phone={"555-555-5555"}
-                        email={"Bill.Gates@microsoft.com"}
-                        linkedin={"https://www.Linkedin.com/in/BillGates"}
-                        github={"https://Github.com/BillGates"} type={""}                            />
+                        email={"nabilfayak@gmail.com"}
+                        linkedin={"https://www.Linkedin.com/in/NabilFayak"}
+                        github={"https://Github.com/NabilFayak"} type={""}                            />
 
                             <View style={styles.actionsProfile}>
                               {/* <TouchableOpacity style={styles.circledButton}>
                                 <Icon name="ellipsis-horizontal" size={20} color={WHITE} />
                               </TouchableOpacity> */}
 
-                              <TouchableOpacity style={styles.roundedButton} onPress={() => Linking.openURL('mailto:Bill.Gates@microsoft.com')}>
+                              <TouchableOpacity style={styles.roundedButton} onPress={() => Linking.openURL('mailto:nabilfayak@gmail.com')}>
                                 <Text style={styles.textButton}>Send Email </Text>
                                 <Icon name="send" size={20} color={WHITE} />
                               </TouchableOpacity>

@@ -1,5 +1,5 @@
 import { DataT } from "../../types";
-import IMAGE_01 from "../images/11.jpg";
+import IMAGE_01 from "../images/nabil.jpg";
 import IMAGE_02 from "../images/12.jpg";
 import IMAGE_03 from "../images/13.jpg";
 import IMAGE_04 from "../images/14.jpg";
@@ -13,11 +13,11 @@ import IMAGE_10 from "../images/20.jpg";
 const data: DataT[] = [
   {
     id: 1,
-    name: "Bill Gates",
+    name: "Nabil Fayak",
     isOnline: true,
-    match: "78",
+    match: "18",
     description:
-      "Software Engineer @ Capital ONE. Experience in React and Swift",
+      "Aspiring Software Engineer | Experience in Full-Stack, Mobile Development, and Cloud Infrastructure",
     message:
       "I love to code!",
     image: IMAGE_01,
@@ -63,85 +63,85 @@ const data: DataT[] = [
     message: "It's not who I am underneath but what I do that defines me.",
     image: IMAGE_05,
   },
-  {
-    id: 6,
-    name: "Slyvia Acevedo",
-    match: "95",
-    description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
-    age: "27",
-    location: "New York, NY",
-    college: "Queens College (CUNY)",
-    skills: "React, AWS, Express, GCP",
-    phone: "+1(234) 567-8901",
-    email: "nickyrunol@email.com",
-    linkedin: "https://www.linkedin.com/in/nickyrunol",
-    github: "https://github.com/nickyrunol",
-    isOnline: true,
-    message:
-      "You have nothing, nothing to threaten me with. Nothing to do with all your strength.",
-    image: IMAGE_06,
-  },
-  {
-    id: 7,
-    name: "Jonathan Ma",
-    match: "67",
-    description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
-    age: "27",
-    location: "New York, NY",
-    college: "Queens College (CUNY)",
-    skills: "React, AWS, Express, GCP",
-    phone: "+1(234) 567-8901",
-    email: "nickyrunol@email.com",
-    linkedin: "https://www.linkedin.com/in/nickyrunol",
-    github: "https://github.com/nickyrunol",
-    isOnline: true,
-    message:
-      "Never start with the head. The victim gets all fuzzy. He can't feel the next... See?",
-    image: IMAGE_07,
-  },
-  {
-    // not all props needed
-    id: 8,
-    name: "Mike Dane",
-    match: "85",
-    description: "New grad looking for exciting swe opportunities",
-    age: "27",
-    location: "New York, NY",
-    college: "Queens College (CUNY)",
-    skills: "React, AWS, Express, GCP",
-    phone: "+1(234) 567-8901",
-    email: "nickyrunol@email.com",
-    linkedin: "https://www.linkedin.com/in/nickyrunol",
-    github: "https://github.com/nickyrunol",
-    isOnline: true,
-    message:
-      "And as for the television's so-called plan, Batman has no jurisdiction.",
-    image: IMAGE_08,
-  },
-  {
-    id: 9,
-    name: "Charley Moore",
-    match: "74",
-    description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
-    isOnline: true,
-    message:
-      "This is what happens when an unstoppable force meets an immovable object.",
-    image: IMAGE_09,
-  },
-  {
-    id: 10,
-    name: "Shane Wighton",
-    match: "98",
-    description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
-    isOnline: false,
-    message:
-      "You want order in Gotham. Batman must take off his mask and turn himself in.",
-    image: IMAGE_10,
-  },
+  // {
+  //   id: 6,
+  //   name: "Slyvia Acevedo",
+  //   match: "95",
+  //   description:
+  //     "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
+  //   age: "27",
+  //   location: "New York, NY",
+  //   college: "Queens College (CUNY)",
+  //   skills: "React, AWS, Express, GCP",
+  //   phone: "+1(234) 567-8901",
+  //   email: "nickyrunol@email.com",
+  //   linkedin: "https://www.linkedin.com/in/nickyrunol",
+  //   github: "https://github.com/nickyrunol",
+  //   isOnline: true,
+  //   message:
+  //     "You have nothing, nothing to threaten me with. Nothing to do with all your strength.",
+  //   image: IMAGE_06,
+  // },
+  // {
+  //   id: 7,
+  //   name: "Jonathan Ma",
+  //   match: "67",
+  //   description:
+  //     "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
+  //   age: "27",
+  //   location: "New York, NY",
+  //   college: "Queens College (CUNY)",
+  //   skills: "React, AWS, Express, GCP",
+  //   phone: "+1(234) 567-8901",
+  //   email: "nickyrunol@email.com",
+  //   linkedin: "https://www.linkedin.com/in/nickyrunol",
+  //   github: "https://github.com/nickyrunol",
+  //   isOnline: true,
+  //   message:
+  //     "Never start with the head. The victim gets all fuzzy. He can't feel the next... See?",
+  //   image: IMAGE_07,
+  // },
+  // {
+  //   // not all props needed
+  //   id: 8,
+  //   name: "Mike Dane",
+  //   match: "85",
+  //   description: "New grad looking for exciting swe opportunities",
+  //   age: "27",
+  //   location: "New York, NY",
+  //   college: "Queens College (CUNY)",
+  //   skills: "React, AWS, Express, GCP",
+  //   phone: "+1(234) 567-8901",
+  //   email: "nickyrunol@email.com",
+  //   linkedin: "https://www.linkedin.com/in/nickyrunol",
+  //   github: "https://github.com/nickyrunol",
+  //   isOnline: true,
+  //   message:
+  //     "And as for the television's so-called plan, Batman has no jurisdiction.",
+  //   image: IMAGE_08,
+  // },
+  // {
+  //   id: 9,
+  //   name: "Charley Moore",
+  //   match: "74",
+  //   description:
+  //     "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
+  //   isOnline: true,
+  //   message:
+  //     "This is what happens when an unstoppable force meets an immovable object.",
+  //   image: IMAGE_09,
+  // },
+  // {
+  //   id: 10,
+  //   name: "Shane Wighton",
+  //   match: "98",
+  //   description:
+  //     "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
+  //   isOnline: false,
+  //   message:
+  //     "You want order in Gotham. Batman must take off his mask and turn himself in.",
+  //   image: IMAGE_10,
+  // },
 ];
 
 export default data;
