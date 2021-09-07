@@ -26,6 +26,7 @@ const ProfileItem = ({
     </View>
 
     <Text style={styles.descriptionProfileItem}>
+      {"\n"}
       {age} - {location}
       {"\n"}
       {type}
