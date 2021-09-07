@@ -36,12 +36,13 @@ const Profile = () => {
         setGithub(response.attributes.github);
         setSkills(response.attributes.skills);
         setAge(response.attributes.age);
-        setImageUrl(
-          response.attributes.profile_image
-            ? response.attributes.profile_image.url
-            : ""
-        );
-
+        // setImageUrl(
+        //   response.attributes.profile_image
+        //     ? response.attributes.profile_image.url
+        //     : ""
+        // );
+        // const stringJson = JSON.stringify(response.attributes.profile_image)
+        // console.log(stringJson)
         return response.attributes.profile_image;
       })
       .then((prof) => {
