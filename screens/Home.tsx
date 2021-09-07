@@ -3,7 +3,7 @@ import { View, ImageBackground } from "react-native";
 import CardStack, { Card } from "react-native-card-stack-swiper";
 import { City, Filters, CardItem } from "../components";
 import styles from "../assets/styles";
-import DEMO from "../assets/data/demo";
+import DEMO from "../assets/data/exploreDemo";
 
 const Home = () => {
   const [swiper, setSwiper] = useState<CardStack | null>(null);
