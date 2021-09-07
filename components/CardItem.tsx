@@ -123,7 +123,7 @@ const CardItem = ({
         >
           <View style={styles.centeredView}>
             <View style={styles.modalView}>
-              <Text style={styles.modalText}>HI!</Text>
+              <Text style={styles.modalText}> Technical Skills    {'\n'}  {'\n'}  Bash, Git, Kotlin, Perl, Ruby, Java</Text>
               <Pressable
                 // style={[styles.modalButton, styles.buttonClose]}
                 onPress={() => setModalVisible(!modalVisible)}
@@ -142,11 +142,10 @@ const CardItem = ({
           {/* <Text style={styles.textStyle}>Show Modal</Text> */}
         </Pressable>
       </View>
-      {/* -------- */}
 
 
 
-
+          {/* Accessibility */}
       <View style={styles.centeredView}>
         <Modal
           animationType="slide"
@@ -159,7 +158,7 @@ const CardItem = ({
         >
           <View style={styles.centeredView}>
             <View style={styles.modalView}>
-              <Text style={styles.modalText}>Hello!</Text>
+              <Text style={styles.modalText}> Soft Skills    {'\n'}  {'\n'}  Interpersonal, Teamwork, Creativity, Problem Solving, Critical Thinking </Text>
               <Pressable
                 // style={[styles.modalButton, styles.buttonClose]}
                 onPress={() => setAccessibilityVisible(!accessibilityVisible)}
