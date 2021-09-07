@@ -180,7 +180,7 @@ export default StyleSheet.create({
   matchesProfileItem: {
     width: 135,
     marginTop: -15,
-    backgroundColor: PRIMARY_COLOR,
+    backgroundColor: BLACK,
     paddingVertical: 10,
     paddingHorizontal: 10,
     borderRadius: 20,
@@ -294,7 +294,7 @@ export default StyleSheet.create({
     marginLeft: 10,
     height: 50,
     borderRadius: 25,
-    backgroundColor: SECONDARY_COLOR,
+    backgroundColor: BLACK,
     paddingHorizontal: 20,
   },
 
