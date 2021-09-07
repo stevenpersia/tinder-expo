@@ -235,7 +235,7 @@ export default StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
   },
-  title: { paddingBottom: 10, fontSize: 22, color: DARK_GRAY },
+  title: { paddingBottom: 10, fontSize: 22, color: 'gold' },
 
   // CONTAINER - HOME
   containerHome: {
