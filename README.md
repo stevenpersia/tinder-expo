@@ -2,7 +2,7 @@
 
 This is an app aimed towards connecting established Software Engineers and Raw Talent in order to come together and develop projects.
 
-Time spent: **7** hours spent in total
+Time spent: **35** hours spent in total
 
 ## User Stories
 
