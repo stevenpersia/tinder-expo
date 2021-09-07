@@ -4,6 +4,9 @@ import Parse from 'parse/react-native';
 import {useNavigation} from '@react-navigation/native';
 import {StackActions} from '@react-navigation/native';
 import Styles from '../Styles';
+import { MaterialIcons } from '@expo/vector-icons';
+import { SimpleLineIcons } from '@expo/vector-icons';
+import styles, { WHITE } from '../assets/styles';
 
 export const UserLogOut: FC<{}> = ({}): ReactElement => {
   const navigation = useNavigation();
@@ -30,10 +33,14 @@ export const UserLogOut: FC<{}> = ({}): ReactElement => {
   return (
     <View style={Styles.login_wrapper}>
       <View style={Styles.form}>
-        <TouchableOpacity onPress={() => doUserLogOut()}>
+        {/* <TouchableOpacity onPress={() => doUserLogOut()}>
           <View style={Styles.button}>
             <Text style={Styles.button_label}>{'Logout'}</Text>
           </View>
+        </TouchableOpacity> */}
+        <TouchableOpacity style={styles.roundedButton} onPress={() => doUserLogOut()}>
+          <SimpleLineIcons name="logout" size={20} color={WHITE} />
+          <Text style={styles.textButton}> Logout</Text>
         </TouchableOpacity>
       </View>
     </View>

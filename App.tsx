@@ -1,9 +1,3 @@
-/**
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
 import 'react-native-gesture-handler';
 import React from 'react';
 import {Image, SafeAreaView, StatusBar, Text, View} from 'react-native';
@@ -46,7 +40,7 @@ function UserRegistrationScreen() {
           /> */}
           <Text style={Styles.login_header_text}>
             <Text style={Styles.login_header_text_bold}>
-              {'React Native on Back4App - '}
+              {'CodeMatch - '}
             </Text>
             {' User registration'}
           </Text>
@@ -69,7 +63,7 @@ function UserLogInScreen() {
           /> */}
           <Text style={Styles.login_header_text}>
             <Text style={Styles.login_header_text_bold}>
-              {'React Native on Back4App - '}
+              {'CodeMatch - '}
             </Text>
             {' User login'}
           </Text>
@@ -92,7 +86,7 @@ function HomeScreen() {
           /> */}
           <Text style={Styles.login_header_text}>
             <Text style={Styles.login_header_text_bold}>
-              {'React Native on Back4App - '}
+              {'CodeMatch - '}
             </Text>
             {' Home'}
           </Text>
@@ -169,7 +163,7 @@ const App = () => {
             }}
           />
 
-          <Tab.Screen
+          {/* <Tab.Screen
             name="Chat"
             component={Messages}
             options={{
@@ -181,7 +175,7 @@ const App = () => {
                 />
               ),
             }}
-          />
+          /> */}
 
           <Tab.Screen
             name="Profile"

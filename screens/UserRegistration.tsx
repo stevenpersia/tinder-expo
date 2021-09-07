@@ -31,7 +31,7 @@ export const UserRegistration: FC<{}> = ({}): ReactElement => {
         );
         // Navigation.navigate takes the user to the screen named after the one
         // passed as parameter
-        navigation.navigate('Home');
+        navigation.navigate('Tab');
         return true;
       })
       .catch((error: any) => {

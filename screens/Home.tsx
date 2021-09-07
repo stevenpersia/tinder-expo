@@ -16,7 +16,7 @@ const Home = () => {
       <View style={styles.containerHome}>
         <View style={styles.top}>
           <City />
-          <Filters />
+          {/* <Filters /> */}
         </View>
 
         <CardStack
@@ -32,7 +32,7 @@ const Home = () => {
                 image={item.image}
                 name={item.name}
                 description={item.description}
-                matches={item.match}
+                // matches={item.match}
               />
             </Card>
           ))}
