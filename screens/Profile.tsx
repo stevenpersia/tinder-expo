@@ -47,7 +47,7 @@ const Profile = () => {
       <ScrollView style={styles.containerProfile}>
         <ImageBackground
           source={{
-            uri: imageUrl,
+            uri: imageUrl ? imageUrl : "a",
           }}
           style={styles.photo}
         >
