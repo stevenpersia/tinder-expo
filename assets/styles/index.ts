@@ -22,7 +22,9 @@ export const DIMENSION_HEIGHT = Dimensions.get("window").height;
 export default StyleSheet.create({
   // COMPONENT - CARD ITEM
   containerCardItem: {
-    backgroundColor: WHITE,
+    borderWidth: 1,
+    borderColor: "gold",
+    backgroundColor: "#000000",
     borderRadius: 8,
     alignItems: "center",
     margin: 10,
