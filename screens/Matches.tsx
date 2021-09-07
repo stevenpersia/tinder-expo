@@ -14,7 +14,7 @@ import {
 import { CardItem, Icon, ProfileItem } from "../components";
 import DEMO from "../assets/data/demo";
 import styles, { BLACK, DARK_GRAY, SECONDARY_COLOR, WHITE } from "../assets/styles";
-import IMAGE_01 from "../assets/images/01.jpg";
+import IMAGE_01 from "../assets/images/11.jpg";
 
 
 const Matches = () => {
@@ -28,9 +28,9 @@ const Matches = () => {
       <View style={styles.containerMatches}>
         <View style={styles.top}>
           <Text style={styles.title}>Matches</Text>
-          <TouchableOpacity>
+          {/* <TouchableOpacity>
             <Icon name="ellipsis-vertical" color={DARK_GRAY} size={20} />
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
 
         <FlatList
@@ -68,15 +68,15 @@ const Matches = () => {
 
                             <ProfileItem
                               matches={IMAGE_01}
-                              name={"Leanne Graham"}
-                              age={"27"}
+                              name={"Bill Gates"}
+                              age={"65"}
                               location={"New York"}
-                              college={"Baruch College"}
-                              skills={"AWS, Azure, GCP"}
+                              college={"Harvard University"}
+                              skills={"Microsoft Office, Azure, AWS"}
                               phone={"555-555-5555"}
-                              email={"Leanne.Graham@gmail.com"}
-                              linkedin={"https://www.linkedin.com/in/leanne"}
-                              github={"https://github.com/leanne"}
+                              email={"Bill.Gates@microsoft.com"}
+                              linkedin={"https://www.Linkedin.com/in/BillGates"}
+                              github={"https://Github.com/BillGates"}
                             />
 
                             <View style={styles.actionsProfile}>
@@ -84,7 +84,7 @@ const Matches = () => {
                                 <Icon name="ellipsis-horizontal" size={20} color={WHITE} />
                               </TouchableOpacity> */}
 
-                              <TouchableOpacity style={styles.roundedButton} onPress={() => Linking.openURL('mailto:leanne.graham@example.com')}>
+                              <TouchableOpacity style={styles.roundedButton} onPress={() => Linking.openURL('mailto:Bill.Gates@microsoft.com')}>
                                 <Text style={styles.textButton}>Send Email </Text>
                                 <Icon name="send" size={20} color={WHITE} />
                               </TouchableOpacity>

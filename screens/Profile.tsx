@@ -10,6 +10,7 @@ import { Icon, ProfileItem } from "../components";
 import DEMO from "../assets/data/demo";
 import styles, { WHITE } from "../assets/styles";
 import NABIL from "../assets/images/nabil.jpg";
+import {UserLogOut} from '../services/UserLogOut';
 
 const Profile = () => {
 
@@ -58,10 +59,7 @@ const Profile = () => {
             <Icon name="ellipsis-horizontal" size={20} color={WHITE} />
           </TouchableOpacity> */}
 
-          <TouchableOpacity style={styles.roundedButton}>
-            <Icon name="settings" size={20} color={WHITE} />
-            <Text style={styles.textButton}>Edit Profile</Text>
-          </TouchableOpacity>
+        <UserLogOut />
         </View>
       </ScrollView>
     </ImageBackground>
