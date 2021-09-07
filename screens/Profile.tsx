@@ -52,7 +52,7 @@ const Profile = () => {
           style={styles.photo}
         >
           <View style={styles.top}>
-            <TouchableOpacity>
+            {/* <TouchableOpacity>
               <Icon
                 name="chevron-back"
                 size={20}
@@ -68,7 +68,7 @@ const Profile = () => {
                 color={WHITE}
                 style={styles.topIconRight}
               />
-            </TouchableOpacity>
+            </TouchableOpacity> */}
           </View>
         </ImageBackground>
 
