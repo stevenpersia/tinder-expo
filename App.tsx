@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import {Image, SafeAreaView, StatusBar, Text, View} from 'react-native';
+import {Image, Alert, SafeAreaView, StatusBar, Text, View} from 'react-native';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Parse from 'parse/react-native';
@@ -8,6 +8,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Home, Matches, Messages, Profile } from "./screens";
+import ContracteeMatches  from "./screens/ContracteeMatches"
 import { PRIMARY_COLOR, DARK_GRAY, BLACK, WHITE } from "./assets/styles";
 import TabBarIcon from "./components/TabBarIcon";
 import {UserRegistration} from './screens/UserRegistration';
@@ -235,7 +236,7 @@ const App = () => {
 
           <Tab.Screen
             name="Matches"
-            component={Matches}
+            component={ContracteeMatches}
             options={{
               tabBarIcon: ({ focused }) => (
                 <TabBarIcon

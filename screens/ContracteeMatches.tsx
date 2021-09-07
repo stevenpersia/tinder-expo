@@ -12,12 +12,12 @@ import {
   Linking,
 } from "react-native";
 import { CardItem, Icon, ProfileItem } from "../components";
-import DEMO from "../assets/data/demo";
+import DEMO from "../assets/data/contracteeDemo";
 import styles, { BLACK, DARK_GRAY, SECONDARY_COLOR, WHITE } from "../assets/styles";
-import IMAGE_01 from "../assets/images/11.jpg";
+import IMAGE_01 from "../assets/images/drew.jpg";
 
 
-const Matches = () => {
+const ContracteeMatches = () => {
   const [modalVisible, setModalVisible] = useState(false);
 
   return (
@@ -68,22 +68,22 @@ const Matches = () => {
 
                             <ProfileItem
                         matches={IMAGE_01}
-                        name={"Bill Gates"}
-                        age={"65"}
+                        name={"Drew"}
+                        age={"20"}
                         location={"New York"}
-                        college={"Harvard University"}
-                        skills={"Microsoft Office, Azure, AWS"}
+                        college={"CUNY Hunter College"}
+                        skills={"AWS, React, Python, Django, Parse"}
                         phone={"555-555-5555"}
-                        email={"Bill.Gates@microsoft.com"}
-                        linkedin={"https://www.Linkedin.com/in/BillGates"}
-                        github={"https://Github.com/BillGates"} type={""}                            />
+                        email={"alcoves75@gmail.com"}
+                        linkedin={"https://www.Linkedin.com/in/andrewhaelee"}
+                        github={"https://Github.com/andrewhylee"} type={""}                            />
 
                             <View style={styles.actionsProfile}>
                               {/* <TouchableOpacity style={styles.circledButton}>
                                 <Icon name="ellipsis-horizontal" size={20} color={WHITE} />
                               </TouchableOpacity> */}
 
-                              <TouchableOpacity style={styles.roundedButton} onPress={() => Linking.openURL('mailto:Bill.Gates@microsoft.com')}>
+                              <TouchableOpacity style={styles.roundedButton} onPress={() => Linking.openURL('mailto:alcoves75@gmail.com')}>
                                 <Text style={styles.textButton}>Send Email </Text>
                                 <Icon name="send" size={20} color={WHITE} />
                               </TouchableOpacity>
@@ -103,4 +103,4 @@ const Matches = () => {
     </ImageBackground>
 )};
 
-export default Matches;
+export default ContracteeMatches;

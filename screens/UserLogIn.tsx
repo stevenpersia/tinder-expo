@@ -54,6 +54,10 @@ export const UserLogIn: FC<{}> = ({}): ReactElement => {
           "Success!",
           `User ${loggedInUser.get("username")} has successfully signed in!`
         );
+        Alert.alert(
+          "New Match Found",
+          "DREW has matched with you",
+        );
         // To verify that this is in fact the current user, currentAsync can be used
         const currentUser: Parse.User = await Parse.User.currentAsync();
         console.log(loggedInUser === currentUser);
