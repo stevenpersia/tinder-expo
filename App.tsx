@@ -240,7 +240,7 @@ const App = () => {
               tabBarIcon: ({ focused }) => (
                 <TabBarIcon
                   focused={focused}
-                  iconName="heart"
+                  iconName="flash"
                   text="Matches"
                 />
               ),
