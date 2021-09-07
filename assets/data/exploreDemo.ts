@@ -27,7 +27,7 @@ const data: DataT[] = [
     name: "Mark Zuckerberg",
     match: "93",
     description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
+      "Young Startup | Looking to develop professional experience and grow my personal skills",
     isOnline: false,
     message: "Someone like you. Someone who'll rattle the cages.",
     image: IMAGE_02,
@@ -37,7 +37,7 @@ const data: DataT[] = [
     name: "Jabrils",
     match: "45",
     description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
+      "Tech Youtuber | Looking to share my skills with the world, I have a comprehensive portfolio of my projects and teaching vidoes on my YouTube channel",
     isOnline: false,
     message:
       "Oh, hee-hee, aha. Ha, ooh, hee, ha-ha, ha-ha. And I thought my jokes were bad.",
@@ -48,7 +48,7 @@ const data: DataT[] = [
     name: "Linus Sebastian",
     match: "88",
     description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
+      "Candian | Experienced DevOps Engineer, interned @IBM",
     isOnline: true,
     message: "Bats frighten me. It's time my enemies shared my dread.",
     image: IMAGE_04,
@@ -58,7 +58,7 @@ const data: DataT[] = [
     name: "Reshma Saujani",
     match: "76",
     description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
+      "Mobile Developer | Proficient at developing iOS and Android applications using React-Native",
     isOnline: false,
     message: "It's not who I am underneath but what I do that defines me.",
     image: IMAGE_05,
