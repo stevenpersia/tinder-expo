@@ -53,6 +53,7 @@ const CardItem = ({
   ];
 
   const [modalVisible, setModalVisible] = useState(false);
+  const [accessibilityVisible, setAccessibilityVisible] = useState(false);
 
   return (
     <>
@@ -98,7 +99,7 @@ const CardItem = ({
               <Icon name="code" color={'#000'} size={25} />
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={() => setAccessibilityVisible(true)} >
               <MaterialIcons name="accessibility" color={DISLIKE_ACTIONS} size={25} />
             </TouchableOpacity>
 
@@ -141,6 +142,47 @@ const CardItem = ({
           {/* <Text style={styles.textStyle}>Show Modal</Text> */}
         </Pressable>
       </View>
+      {/* -------- */}
+
+
+
+
+      <View style={styles.centeredView}>
+        <Modal
+          animationType="slide"
+          transparent={true}
+          visible={accessibilityVisible}
+          onRequestClose={() => {
+            Alert.alert("Modal has been closed.");
+            setAccessibilityVisible(!accessibilityVisible);
+          }}
+        >
+          <View style={styles.centeredView}>
+            <View style={styles.modalView}>
+              <Text style={styles.modalText}>Hello!</Text>
+              <Pressable
+                // style={[styles.modalButton, styles.buttonClose]}
+                onPress={() => setAccessibilityVisible(!accessibilityVisible)}
+              >
+              <Icon name="close" color={LIKE_ACTIONS} size={35} />
+
+                {/* <Text style={styles.textStyle}>Hide Modal</Text> */}
+              </Pressable>
+            </View>
+          </View>
+        </Modal>
+        <Pressable
+          // style={[styles.modalButton, styles.buttonOpen]}
+          // onPress={() => setModalVisible(true)}
+        >
+          {/* <Text style={styles.textStyle}>Show Modal</Text> */}
+        </Pressable>
+      </View>
+
+
+
+
+      
     </>
   );
 };
