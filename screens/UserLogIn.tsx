@@ -1,4 +1,4 @@
-import React, {FC, ReactElement, useState} from 'react';
+import React, { FC, ReactElement, useState } from "react";
 import {
   Alert,
   Image,
@@ -6,16 +6,16 @@ import {
   TextInput,
   TouchableOpacity,
   View,
-} from 'react-native';
-import Parse from 'parse/react-native';
-import {useNavigation} from '@react-navigation/native';
-import Styles from '../Styles';
+} from "react-native";
+import Parse from "parse/react-native";
+import { useNavigation } from "@react-navigation/native";
+import Styles from "../Styles";
 
 export const UserLogIn: FC<{}> = ({}): ReactElement => {
   const navigation = useNavigation();
 
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const doUserLogIn = async function (): Promise<boolean> {
     // Note that this values come from state variables that we've declared before
@@ -25,20 +25,20 @@ export const UserLogIn: FC<{}> = ({}): ReactElement => {
       .then(async (loggedInUser: Parse.User) => {
         // logIn returns the corresponding ParseUser object
         Alert.alert(
-          'Success!',
-          `User ${loggedInUser.get('username')} has successfully signed in!`,
+          "Success!",
+          `User ${loggedInUser.get("username")} has successfully signed in!`
         );
         // To verify that this is in fact the current user, currentAsync can be used
         const currentUser: Parse.User = await Parse.User.currentAsync();
         console.log(loggedInUser === currentUser);
         // Navigation.navigate takes the user to the screen named after the one
         // passed as parameter
-        navigation.navigate('Tab');
+        navigation.navigate("Tab");
         return true;
       })
       .catch((error: any) => {
         // Error can be caused by wrong parameters or lack of Internet connection
-        Alert.alert('Error!', error.message);
+        Alert.alert("Error!", error.message);
         return false;
       });
   };
@@ -51,20 +51,20 @@ export const UserLogIn: FC<{}> = ({}): ReactElement => {
       .then(async (loggedInUser: Parse.User) => {
         // logIn returns the corresponding ParseUser object
         Alert.alert(
-          'Success!',
-          `User ${loggedInUser.get('username')} has successfully signed in!`,
+          "Success!",
+          `User ${loggedInUser.get("username")} has successfully signed in!`
         );
         // To verify that this is in fact the current user, currentAsync can be used
         const currentUser: Parse.User = await Parse.User.currentAsync();
         console.log(loggedInUser === currentUser);
         // Navigation.navigate takes the user to the screen named after the one
         // passed as parameter
-        navigation.navigate('LessTabs');
+        navigation.navigate("LessTabs");
         return true;
       })
       .catch((error: any) => {
         // Error can be caused by wrong parameters or lack of Internet connection
-        Alert.alert('Error!', error.message);
+        Alert.alert("Error!", error.message);
         return false;
       });
   };
@@ -75,38 +75,38 @@ export const UserLogIn: FC<{}> = ({}): ReactElement => {
         <TextInput
           style={Styles.form_input}
           value={username}
-          placeholder={'Username'}
+          placeholder={"Username"}
           onChangeText={(text) => setUsername(text)}
-          autoCapitalize={'none'}
-          keyboardType={'email-address'}
+          autoCapitalize={"none"}
+          keyboardType={"email-address"}
         />
         <TextInput
           style={Styles.form_input}
           value={password}
-          placeholder={'Password'}
+          placeholder={"Password"}
           secureTextEntry
           onChangeText={(text) => setPassword(text)}
         />
         <TouchableOpacity onPress={() => doUserLogIn()}>
           <View style={Styles.button}>
-            <Text style={Styles.button_label}>{'Sign in as Contractor'}</Text>
+            <Text style={Styles.button_label}>{"Sign in as Contractor"}</Text>
           </View>
         </TouchableOpacity>
         <View style={Styles.login_social_separator}>
           <View style={Styles.login_social_separator_line} />
-          <Text style={Styles.login_social_separator_text}>{'or'}</Text>
+          <Text style={Styles.login_social_separator_text}>{"or"}</Text>
           <View style={Styles.login_social_separator_line} />
         </View>
         <TouchableOpacity onPress={() => contracteeUserLogIn()}>
           <View style={Styles.button}>
-            <Text style={Styles.button_label}>{'Sign in as Contractee'}</Text>
+            <Text style={Styles.button_label}>{"Sign in as Contractee"}</Text>
           </View>
         </TouchableOpacity>
       </View>
       <View style={Styles.login_social}>
         <View style={Styles.login_social_separator}>
           <View style={Styles.login_social_separator_line} />
-          <Text style={Styles.login_social_separator_text}>{'or'}</Text>
+          <Text style={Styles.login_social_separator_text}>{"or"}</Text>
           <View style={Styles.login_social_separator_line} />
         </View>
         <View style={Styles.login_social_buttons}>
@@ -141,17 +141,16 @@ export const UserLogIn: FC<{}> = ({}): ReactElement => {
         </View>
       </View>
       <>
-        <TouchableOpacity onPress={() => navigation.navigate('Sign Up')}>
+        <TouchableOpacity onPress={() => navigation.navigate("Sign Up")}>
           <Text style={Styles.login_footer_text}>
             {"Don't have an account? "}
-            <Text style={Styles.login_footer_link}>{'Sign up'}</Text>
+            <Text style={Styles.login_footer_link}>{"Sign up"}</Text>
           </Text>
         </TouchableOpacity>
       </>
     </View>
   );
 };
-
 
 // import React, { FC, ReactElement, useState } from "react";
 // import {

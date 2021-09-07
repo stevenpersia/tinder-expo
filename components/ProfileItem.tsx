@@ -15,6 +15,7 @@ const ProfileItem = ({
   location,
   matches,
   name,
+  type,
 }: ProfileItemT) => (
   <View style={styles.containerProfileItem}>
     <View style={styles.matchesProfileItem}>
@@ -26,6 +27,8 @@ const ProfileItem = ({
 
     <Text style={styles.descriptionProfileItem}>
       {age} - {location}
+      {"\n"}
+      {type}
     </Text>
 
     <View style={styles.info}>

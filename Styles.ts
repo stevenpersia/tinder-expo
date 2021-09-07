@@ -75,6 +75,8 @@ const Styles = StyleSheet.create({
     marginHorizontal: 10,
     color: "#808080",
     fontSize: 16,
+    paddingBottom: 6,
+    paddingTop: 6,
   },
   login_social_buttons: {
     flexDirection: "row",

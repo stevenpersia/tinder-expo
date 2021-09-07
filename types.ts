@@ -32,6 +32,7 @@ export type ProfileItemT = {
   location?: string;
   matches: string;
   name: string;
+  type: string;
 };
 
 export type TabBarIconT = {
