@@ -25,32 +25,20 @@ const Profile = () => {
   const [imageUrl, setImageUrl] = useState("");
 
   const userInfo = (() => {
-    Parse.User.currentAsync()
-      .then((response) => {
-        console.log(response.attributes.profile_image["name"]);
-        setUserType(response.attributes.userType);
-        setUsername(response.attributes.username);
-        setSchool(response.attributes.school);
-        setEmail(response.attributes.email);
-        setLinkedin(response.attributes.linkedin);
-        setGithub(response.attributes.github);
-        setSkills(response.attributes.skills);
-        setAge(response.attributes.age);
-        // setImageUrl(
-        //   response.attributes.profile_image
-        //     ? response.attributes.profile_image.url
-        //     : ""
-        // );
-        // const stringJson = JSON.stringify(response.attributes.profile_image)
-        // console.log(stringJson)
-        return response.attributes.profile_image;
-      })
-      .then((prof) => {
-        console.log(prof.toString());
-      });
+    Parse.User.currentAsync().then((response) => {
+      setUserType(response.attributes.userType);
+      setUsername(response.attributes.username);
+      setSchool(response.attributes.school);
+      setEmail(response.attributes.email);
+      setLinkedin(response.attributes.linkedin);
+      setGithub(response.attributes.github);
+      setSkills(response.attributes.skills);
+      setAge(response.attributes.age);
+      const stringJson = JSON.stringify(response.attributes.profile_image);
+      setImageUrl(JSON.parse(stringJson).url);
+    });
   })();
 
-  console.log("BAHHHHHHH" + imageUrl);
   return (
     <ImageBackground
       source={require("../assets/images/bg.png")}
@@ -59,8 +47,7 @@ const Profile = () => {
       <ScrollView style={styles.containerProfile}>
         <ImageBackground
           source={{
-            uri:
-              "https://parsefiles.back4app.com/KzecbOsRY2VfTvOKarw57aaaCG3bJVmmvi2ufVbX/cf89601f5eefc6104b3d6ef18714d8a5_drew.jpg",
+            uri: imageUrl,
           }}
           style={styles.photo}
         >
