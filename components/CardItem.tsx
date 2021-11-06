@@ -34,7 +34,6 @@ const CardItem = ({
   const nameStyle = [
     {
       paddingTop: hasVariant ? 10 : 15,
-      paddingBottom: hasVariant ? 5 : 7,
       color: "#363636",
       fontSize: hasVariant ? 15 : 30,
     },
@@ -44,15 +43,6 @@ const CardItem = ({
     <View style={styles.containerCardItem}>
       {/* IMAGE */}
       <Image source={image} style={imageStyle} />
-
-      {/* MATCHES */}
-      {matches && (
-        <View style={styles.matchesCardItem}>
-          <Text style={styles.matchesTextCardItem}>
-            <Icon name="heart" color={WHITE} size={13} /> {matches}% Match!
-          </Text>
-        </View>
-      )}
 
       {/* NAME */}
       <Text style={nameStyle}>{name}</Text>
@@ -75,20 +65,12 @@ const CardItem = ({
       {/* ACTIONS */}
       {hasActions && (
         <View style={styles.actionsCardItem}>
-          <TouchableOpacity style={styles.miniButton}>
-            <Icon name="star" color={STAR_ACTIONS} size={14} />
+          <TouchableOpacity style={styles.button}>
+            <Icon name="heart" color={LIKE_ACTIONS} size={45} />
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.button}>
-            <Icon name="heart" color={LIKE_ACTIONS} size={25} />
-          </TouchableOpacity>
-
-          <TouchableOpacity style={styles.button}>
-            <Icon name="close" color={DISLIKE_ACTIONS} size={25} />
-          </TouchableOpacity>
-
-          <TouchableOpacity style={styles.miniButton}>
-            <Icon name="flash" color={FLASH_ACTIONS} size={14} />
+            <Icon name="close" color={DISLIKE_ACTIONS} size={45} />
           </TouchableOpacity>
         </View>
       )}

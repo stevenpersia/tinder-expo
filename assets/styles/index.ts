@@ -1,9 +1,9 @@
 import { StyleSheet, Dimensions } from "react-native";
 
-export const PRIMARY_COLOR = "#7444C0";
-export const SECONDARY_COLOR = "#5636B8";
+export const PRIMARY_COLOR = "#CE0F3D";
+export const SECONDARY_COLOR = "#FF7F7F";
 export const WHITE = "#FFFFFF";
-export const GRAY = "#757E90";
+export const GRAY = "#d3d3d3";
 export const DARK_GRAY = "#363636";
 export const BLACK = "#000000";
 
@@ -11,9 +11,9 @@ export const ONLINE_STATUS = "#46A575";
 export const OFFLINE_STATUS = "#D04949";
 
 export const STAR_ACTIONS = "#FFA200";
-export const LIKE_ACTIONS = "#B644B2";
-export const DISLIKE_ACTIONS = "#363636";
-export const FLASH_ACTIONS = "#5028D7";
+export const LIKE_ACTIONS = "#CE0F3D";
+export const DISLIKE_ACTIONS = "#CE0F3D";
+export const FLASH_ACTIONS = "#000000";
 
 export const DIMENSION_WIDTH = Dimensions.get("window").width;
 export const DIMENSION_HEIGHT = Dimensions.get("window").height;
@@ -21,7 +21,7 @@ export const DIMENSION_HEIGHT = Dimensions.get("window").height;
 export default StyleSheet.create({
   // COMPONENT - CARD ITEM
   containerCardItem: {
-    backgroundColor: WHITE,
+    backgroundColor: GRAY,
     borderRadius: 8,
     alignItems: "center",
     margin: 10,
@@ -51,7 +51,7 @@ export default StyleSheet.create({
     alignItems: "center",
   },
   statusText: {
-    color: GRAY,
+    color: DARK_GRAY,
     fontSize: 12,
   },
   online: {
@@ -74,16 +74,16 @@ export default StyleSheet.create({
     paddingVertical: 30,
   },
   button: {
-    width: 60,
-    height: 60,
-    borderRadius: 30,
+    width: 80,
+    height: 80,
+    borderRadius: 50,
     backgroundColor: WHITE,
     marginHorizontal: 7,
     alignItems: "center",
     justifyContent: "center",
     elevation: 1,
-    shadowOpacity: 0.15,
-    shadowRadius: 20,
+    shadowOpacity: 0.4,
+    shadowRadius: 30,
     shadowColor: DARK_GRAY,
     shadowOffset: { height: 10, width: 0 },
   },
