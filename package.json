@@ -8,28 +8,30 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "@expo/vector-icons": "^12.0.4",
+    "@expo/vector-icons": "^12.0.0",
     "@react-navigation/bottom-tabs": "^5.11.8",
     "@react-navigation/native": "^5.9.3",
     "@react-navigation/stack": "^5.14.3",
-    "expo": "~40.0.0",
-    "expo-status-bar": "~1.0.3",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
+    "expo": "^44.0.0",
+    "expo-status-bar": "~1.2.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-native": "0.64.3",
     "react-native-card-stack-swiper": "^1.2.5",
-    "react-native-gesture-handler": "~1.8.0",
-    "react-native-screens": "~2.15.2",
-    "react-native-web": "~0.13.12",
+    "react-native-gesture-handler": "~2.1.0",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-screens": "~3.10.1",
+    "react-native-web": "0.17.1",
     "react-navigation": "^4.4.4"
   },
   "devDependencies": {
-    "@babel/core": "~7.9.0",
-    "@types/react": "~16.9.35",
-    "@types/react-dom": "~16.9.8",
-    "@types/react-native": "~0.63.2",
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-proposal-unicode-property-regex": "^7.18.6",
+    "@types/react": "~17.0.21",
+    "@types/react-dom": "~17.0.9",
+    "@types/react-native": "~0.64.12",
     "prettier": "^2.2.1",
-    "typescript": "~4.0.0"
+    "typescript": "~4.3.5"
   },
   "private": true
 }
